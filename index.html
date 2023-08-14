@@ -14,18 +14,16 @@
 
         <!-- Place your <a-entity> element inside <a-scene> -->
         <a-entity
-            id="defaultCube"
+            id="myModel"
             gltf-model="url(scene.gltf)"
-            position="0 0 -1"
+            position="0 0 -50"
             scale="0.1 0.1 0.1">
         </a-entity>
 
         <!-- Lighting -->
-      <a-light type="ambient" color="#888"></a-light>
-      <a-light type="directional" position="-3 4 1" intensity="0.5" target="#myModel"></a-light>
+      <a-light type="ambient" color="white"></a-light>
+      <a-light type="directional" position="100 100 100" intensity="1" target="#myModel"></a-light>
   
-      <!-- Ground Plane -->
-      <a-plane position="0 -0.1 0" rotation="-90 0 0" width="10" height="10" color="#333"></a-plane>
 
 
     </a-scene>
